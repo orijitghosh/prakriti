@@ -313,7 +313,7 @@ for bivariate density.
 set.seed(42)
 ggplot(diamonds[sample(nrow(diamonds), 5000), ],
        aes(carat, price)) +
-  geom_hex(bins = 35) +
+  geom_bin2d(bins = 40) +
   scale_fill_prakriti("munnar", discrete = FALSE) +
   labs(
     title = "Diamond carat vs price density",
@@ -321,9 +321,6 @@ ggplot(diamonds[sample(nrow(diamonds), 5000), ],
     x = "Carat", y = "Price (USD)", fill = "Count"
   ) +
   theme_prak()
-#> Warning: Computation failed in `stat_binhex()`.
-#> Caused by error in `compute_group()`:
-#> ! The package "hexbin" is required for `stat_bin_hex()`.
 ```
 
-![](qualitative_files/figure-html/hex-1.png)
+![](qualitative_files/figure-html/bin2d-1.png)
