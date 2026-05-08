@@ -21,14 +21,14 @@ Depends:
 Imports:
     grDevices,
     graphics,
-    ggplot2 (>= 3.4.0),
-    scales (>= 1.2.0)
+    ggplot2 (>= 3.4.0)
 Suggests:
     testthat (>= 3.0.0),
     knitr,
     rmarkdown,
     pkgdown,
     patchwork
+VignetteBuilder: knitr
 Config/testthat/edition: 3
 URL: https://orijitghosh.github.io/prakriti/, https://github.com/orijitghosh/prakriti
 BugReports: https://github.com/orijitghosh/prakriti/issues

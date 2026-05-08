@@ -264,7 +264,7 @@ ggplot(mpg, aes(displ, hwy, color = class)) +
   theme_prak()
 ```
 
-## Dark-mode density - nocturn
+## Dark-mode scatter - nocturn
 
 `nocturn` starts from near-black, so it pairs naturally with a dark
 background. Good for presentations or dashboards with dark themes.
@@ -275,13 +275,16 @@ bio_pts <- data.frame(
   x = c(rnorm(300, 3, 1.2), rnorm(200, 7, 0.8)),
   y = c(rnorm(300, 4, 1.5), rnorm(200, 6, 1.0))
 )
+bio_pts$intensity <- with(bio_pts,
+  dnorm(x, 3, 1.2) * dnorm(y, 4, 1.5) +
+  dnorm(x, 7, 0.8) * dnorm(y, 6, 1.0)
+)
 
-ggplot(bio_pts, aes(x, y)) +
-  stat_density_2d(aes(fill = after_stat(level)),
-                  geom = "polygon", alpha = 0.85) +
-  scale_fill_prakriti("nocturn", discrete = FALSE) +
+ggplot(bio_pts, aes(x, y, color = intensity)) +
+  geom_point(size = 1.8, alpha = 0.85) +
+  scale_color_prakriti("nocturn", discrete = FALSE) +
   labs(
-    title = "Bioluminescent density field",
+    title = "Bioluminescent point field",
     subtitle = "nocturn palette on dark background",
     x = NULL, y = NULL
   ) +
