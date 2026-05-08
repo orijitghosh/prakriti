@@ -146,8 +146,8 @@ articles with rendered plots:
   density
 
 There’s also a
-[`tutorial.R`](https://orijitghosh.github.io/prakriti/tutorial.R) script
-with all 24 examples in one file if you prefer running code
+[`tutorial.R`](https://github.com/orijitghosh/prakriti/blob/main/tutorial.R)
+script with all 24 examples in one file if you prefer running code
 interactively in RStudio.
 
 ## Contributing
@@ -157,4 +157,5 @@ palette, open an issue with reference photos and suggested hex codes.
 
 ## License
 
-MIT. See [LICENSE](https://orijitghosh.github.io/prakriti/LICENSE.md).
+MIT. See
+[LICENSE](https://github.com/orijitghosh/prakriti/blob/main/LICENSE.md).
