@@ -1,5 +1,5 @@
 
-# prakriti <img src="man/figures/logo.png" align="right" height="139" alt="prakriti logo" />
+# prakriti <img src="man/figures/logo.gif" align="right" height="180" alt="prakriti logo" />
 
 <!-- badges: start -->
 [![R-CMD-check](https://github.com/orijitghosh/prakriti/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/orijitghosh/prakriti/actions/workflows/R-CMD-check.yaml)
@@ -10,10 +10,6 @@
 30 color palettes for R, each one pulled from an Indian landscape. Himalayan
 ice. Thar dunes at sunset. Flamingos over the Rann. Bioluminescent shores off
 Havelock. The autumn chinar canopy in Kashmir.
-
-<div align="center">
-<img src="logo_video.gif" width="400" alt="prakriti logo animation" />
-</div>
 
 Palettes come in three types (sequential, diverging, qualitative) and plug
 straight into `ggplot2` with `scale_color_prakriti()` and

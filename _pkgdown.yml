@@ -10,6 +10,7 @@ template:
 
 home:
   title: "prakriti - Color Palettes from India's Natural Landscapes"
+  logo: man/figures/logo.gif
   description: >
     30 hand-tuned color palettes inspired by India's biomes and geography,
     with first-class ggplot2 integration.
