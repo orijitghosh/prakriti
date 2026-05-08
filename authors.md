@@ -11,12 +11,12 @@ Source:
 
 Ghosh A (2026). *prakriti: Color Palettes Inspired by India's Natural
 Landscapes*. R package version 0.1.0,
-<https://github.com/orijitghosh/prakriti>.
+<https://orijitghosh.github.io/prakriti/>.
 
     @Manual{,
       title = {prakriti: Color Palettes Inspired by India's Natural Landscapes},
       author = {Arijit Ghosh},
       year = {2026},
       note = {R package version 0.1.0},
-      url = {https://github.com/orijitghosh/prakriti},
+      url = {https://orijitghosh.github.io/prakriti/},
     }

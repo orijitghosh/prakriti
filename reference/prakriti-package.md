@@ -27,6 +27,8 @@ continuous interpolation, and base-graphics display helpers.
 
 Useful links:
 
+- <https://orijitghosh.github.io/prakriti/>
+
 - <https://github.com/orijitghosh/prakriti>
 
 - Report bugs at <https://github.com/orijitghosh/prakriti/issues>

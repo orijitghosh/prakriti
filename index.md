@@ -126,12 +126,29 @@ Full docs:
 [`?prakriti_palette`](https://orijitghosh.github.io/prakriti/reference/prakriti_palette.md)
 or see the [pkgdown site](https://orijitghosh.github.io/prakriti/).
 
-## Tutorial
+## Cookbook
 
-[`tutorial.R`](https://orijitghosh.github.io/prakriti/tutorial.R) has 24
-worked examples: heatmaps, stacked areas, donut charts, calendar tiles,
-dark-mode density fields, correlation matrices, and more. Each section
-is self-contained and runs in RStudio with Ctrl+Enter.
+The [pkgdown site](https://orijitghosh.github.io/prakriti/) has full
+articles with rendered plots:
+
+- **[Getting
+  started](https://orijitghosh.github.io/prakriti/articles/prakriti.html)** -
+  installation, discovery, basic ggplot2 usage
+- **[Palette
+  gallery](https://orijitghosh.github.io/prakriti/articles/gallery.html)** -
+  all 30 palettes as swatches, continuous ramps, and a metadata table
+- **[Sequential & diverging
+  recipes](https://orijitghosh.github.io/prakriti/articles/sequential-diverging.html)** -
+  heatmaps, contours, calendar tiles, correlation matrices, anomaly maps
+- **[Qualitative
+  recipes](https://orijitghosh.github.io/prakriti/articles/qualitative.html)** -
+  scatter plots, stacked areas, donut charts, ridgelines, dark-mode
+  density
+
+There’s also a
+[`tutorial.R`](https://orijitghosh.github.io/prakriti/tutorial.R) script
+with all 24 examples in one file if you prefer running code
+interactively in RStudio.
 
 ## Contributing
 
