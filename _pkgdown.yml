@@ -1,0 +1,50 @@
+url: https://orijitghosh.github.io/prakriti/
+
+template:
+  bootstrap: 5
+  bootswatch: cosmo
+  bslib:
+    primary: "#1A5FB4"
+    bg: "#FFFFFF"
+    fg: "#1A1A1A"
+
+home:
+  title: "prakriti - Color Palettes from India's Natural Landscapes"
+  description: >
+    30 hand-tuned color palettes inspired by India's biomes and geography,
+    with first-class ggplot2 integration.
+
+navbar:
+  structure:
+    left: [intro, reference, articles]
+    right: [search, github]
+  components:
+    github:
+      icon: fa-github
+      href: https://github.com/orijitghosh/prakriti
+
+reference:
+  - title: "Core"
+    desc: "Build and retrieve palettes"
+    contents:
+      - prakriti_palette
+      - prakriti_palettes
+
+  - title: "ggplot2 Scales"
+    desc: "Plug palettes into ggplot2"
+    contents:
+      - scale_color_prakriti
+      - scale_colour_prakriti
+      - scale_fill_prakriti
+
+  - title: "Display and Discovery"
+    desc: "Browse and inspect palettes"
+    contents:
+      - display_prakriti
+      - prakriti_names
+      - prakriti_info
+
+articles:
+  - title: "Getting Started"
+    contents:
+      - prakriti

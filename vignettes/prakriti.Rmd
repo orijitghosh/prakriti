@@ -1,0 +1,138 @@
+---
+title: "Getting started with prakriti"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Getting started with prakriti}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.width = 7,
+  fig.height = 5,
+  dpi = 96
+)
+```
+
+## What is prakriti?
+
+**prakriti** (Sanskrit for *nature*) provides 30 hand-tuned color palettes
+inspired by India's natural landscapes. Each palette is designed for a specific
+use case - sequential, diverging, or qualitative - and integrates directly with
+`ggplot2`.
+
+```{r load}
+library(prakriti)
+library(ggplot2)
+```
+
+## Discovering palettes
+
+```{r names}
+prakriti_names()
+```
+
+Get structured metadata with `prakriti_info()`:
+
+```{r info}
+prakriti_info()
+```
+
+## Viewing palettes
+
+Display a single palette:
+
+```{r display-one, fig.height=1.5}
+display_prakriti("valley_of_flowers")
+```
+
+Display all 30 palettes at once:
+
+```{r display-all, fig.height=12}
+display_prakriti()
+```
+
+## Using palettes directly
+
+`prakriti_palette()` returns a character vector of hex codes:
+
+```{r palette-basic}
+prakriti_palette("himalaya")
+prakriti_palette("thar", n = 3)
+```
+
+Reverse with `direction = -1`:
+
+```{r palette-reverse}
+prakriti_palette("chinar", direction = -1)
+```
+
+Interpolate to any number of colors with `type = "continuous"`:
+
+```{r palette-continuous}
+prakriti_palette("nilgiri", n = 12, type = "continuous")
+```
+
+## ggplot2 integration
+
+### Qualitative palettes (categorical data)
+
+```{r scatter, fig.height=4}
+ggplot(iris, aes(Sepal.Length, Petal.Length,
+                 color = Species, shape = Species)) +
+  geom_point(size = 3, alpha = 0.85) +
+  scale_color_prakriti("valley_of_flowers") +
+  labs(title = "Iris dataset - valley_of_flowers palette") +
+  theme_minimal()
+```
+
+### Sequential palettes (continuous data)
+
+```{r heatmap}
+ggplot(faithfuld, aes(waiting, eruptions, fill = density)) +
+  geom_raster(interpolate = TRUE) +
+  scale_fill_prakriti("himalaya") +
+  coord_cartesian(expand = FALSE) +
+  labs(title = "Old Faithful - himalaya palette") +
+  theme_minimal()
+```
+
+### Diverging palettes (data with a meaningful midpoint)
+
+```{r diverging}
+cor_mat <- cor(mtcars[, 1:7])
+cor_df  <- as.data.frame(as.table(cor_mat))
+names(cor_df) <- c("var1", "var2", "rho")
+
+ggplot(cor_df, aes(var1, var2, fill = rho)) +
+  geom_tile(color = "white", linewidth = 0.5) +
+  scale_fill_prakriti("mehrangarh", limits = c(-1, 1)) +
+  coord_equal() +
+  labs(title = "Correlation matrix - mehrangarh palette") +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+```
+
+## Overriding defaults
+
+By default, qualitative palettes produce discrete scales and sequential/diverging
+produce continuous scales. Override with `discrete`:
+
+```{r override}
+# Force a sequential palette into discrete mode
+ggplot(mtcars, aes(factor(cyl), mpg, fill = factor(cyl))) +
+  geom_boxplot() +
+  scale_fill_prakriti("thar", discrete = TRUE) +
+  labs(title = "Forced discrete: thar palette") +
+  theme_minimal() +
+  theme(legend.position = "none")
+```
+
+## Full tutorial
+
+For 24 detailed plot examples covering every palette type - stacked area,
+donut charts, calendar heatmaps, correlation tiles, dark-mode density fields,
+and more - see `tutorial.R` in the package root.
