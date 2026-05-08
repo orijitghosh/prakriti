@@ -141,7 +141,7 @@ with rendered plots:
 - **[Qualitative recipes](https://orijitghosh.github.io/prakriti/articles/qualitative.html)** -
   scatter plots, stacked areas, donut charts, ridgelines, dark-mode density
 
-There's also a [`tutorial.R`](tutorial.R) script with all 24 examples in one
+There's also a [`tutorial.R`](https://github.com/orijitghosh/prakriti/blob/main/tutorial.R) script with all 24 examples in one
 file if you prefer running code interactively in RStudio.
 
 ## Contributing
@@ -151,4 +151,4 @@ an issue with reference photos and suggested hex codes.
 
 ## License
 
-MIT. See [LICENSE](LICENSE.md).
+MIT. See [LICENSE](https://github.com/orijitghosh/prakriti/blob/main/LICENSE.md).
