@@ -526,7 +526,7 @@ ggplot(anom, aes(lon, lat, fill = anomaly)) +
 # Bivariate density using diamonds subset
 ggplot(diamonds[sample(nrow(diamonds), 5000), ],
        aes(carat, price)) +
-  geom_hex(bins = 35) +
+  geom_bin2d(bins = 40) +
   scale_fill_prakriti("munnar", discrete = FALSE) +
   labs(
     title    = "Diamond carat vs price density",
