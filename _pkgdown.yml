@@ -48,3 +48,10 @@ articles:
   - title: "Getting Started"
     contents:
       - prakriti
+  - title: "Gallery"
+    contents:
+      - gallery
+  - title: "Recipes"
+    contents:
+      - sequential-diverging
+      - qualitative

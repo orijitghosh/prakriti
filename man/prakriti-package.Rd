@@ -24,6 +24,7 @@ continuous interpolation, and base-graphics display helpers.
 \seealso{
 Useful links:
 \itemize{
+  \item \url{https://orijitghosh.github.io/prakriti/}
   \item \url{https://github.com/orijitghosh/prakriti}
   \item Report bugs at \url{https://github.com/orijitghosh/prakriti/issues}
 }
