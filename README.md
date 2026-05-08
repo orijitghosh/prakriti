@@ -11,6 +11,10 @@
 ice. Thar dunes at sunset. Flamingos over the Rann. Bioluminescent shores off
 Havelock. The autumn chinar canopy in Kashmir.
 
+<div align="center">
+<img src="logo_video.gif" width="400" alt="prakriti logo animation" />
+</div>
+
 Palettes come in three types (sequential, diverging, qualitative) and plug
 straight into `ggplot2` with `scale_color_prakriti()` and
 `scale_fill_prakriti()`. They also work fine with base graphics, `lattice`, or
