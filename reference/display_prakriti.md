@@ -34,8 +34,10 @@ Invisibly returns `NULL`. Called for its side effect.
 ``` r
 display_prakriti("rann")
 
-if (FALSE) { # \dontrun{
+# \donttest{
 display_prakriti()
+
 display_prakriti(show_type = FALSE)
-} # }
+
+# }
 ```

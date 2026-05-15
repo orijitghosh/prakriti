@@ -47,14 +47,16 @@ A ggplot2 scale object.
 ## Examples
 
 ``` r
-if (FALSE) { # \dontrun{
+# \donttest{
 library(ggplot2)
 ggplot(mtcars, aes(wt, mpg, color = factor(cyl))) +
   geom_point(size = 3) +
   scale_color_prakriti("valley_of_flowers")
 
+
 ggplot(faithfuld, aes(waiting, eruptions, fill = density)) +
   geom_raster() +
   scale_fill_prakriti("himalaya")
-} # }
+
+# }
 ```

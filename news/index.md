@@ -1,5 +1,19 @@
 # Changelog
 
+## prakriti 0.1.2
+
+- Replaced `\dontrun{}` with `\donttest{}` in examples for
+  [`display_prakriti()`](https://orijitghosh.github.io/prakriti/reference/display_prakriti.md)
+  and
+  [`scale_color_prakriti()`](https://orijitghosh.github.io/prakriti/reference/scale_prakriti.md)
+  /
+  [`scale_fill_prakriti()`](https://orijitghosh.github.io/prakriti/reference/scale_prakriti.md),
+  per CRAN reviewer feedback.
+
+## prakriti 0.1.1
+
+- Internal cleanups in preparation for CRAN submission.
+
 ## prakriti 0.1.0
 
 Initial release.
