@@ -1,12 +1,14 @@
 ## Resubmission
 
-This is a resubmission. In response to CRAN reviewer feedback, I have:
+This is a resubmission. Changes since last submission:
 
-* Replaced `\dontrun{}` with `\donttest{}` in the examples for
+* Removed dead link to `tutorial.R` from README.md (file is not
+  shipped with the package; the link returned a 404).
+
+Previous resubmission changes (still in place):
+
+* Replaced `\dontrun{}` with `\donttest{}` in examples for
   `display_prakriti()` and `scale_color_prakriti()` / `scale_fill_prakriti()`.
-  The examples are executable (no missing software, no API keys); they were
-  wrapped only because rendering 30 palette swatches or building a ggplot may
-  exceed the 5-second example-runtime guideline on some systems.
 
 ## R CMD check results
 

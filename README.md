@@ -141,9 +141,6 @@ with rendered plots:
 - **[Qualitative recipes](https://orijitghosh.github.io/prakriti/articles/qualitative.html)** -
   scatter plots, stacked areas, donut charts, ridgelines, dark-mode density
 
-There's also a [`tutorial.R`](https://github.com/orijitghosh/prakriti/blob/main/tutorial.R) script with all 24 examples in one
-file if you prefer running code interactively in RStudio.
-
 ## Contributing
 
 Issues and PRs welcome. If you have a landscape in mind for a new palette, open

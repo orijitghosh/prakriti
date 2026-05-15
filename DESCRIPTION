@@ -1,6 +1,6 @@
 Package: prakriti
 Title: Color Palettes Inspired by India's Natural Landscapes
-Version: 0.1.2
+Version: 0.1.4
 Authors@R:
     person(given = "Arijit",
            family = "Ghosh",
