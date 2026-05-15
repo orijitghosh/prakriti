@@ -9,8 +9,6 @@
 ^_pkgdown\.yml$
 ^docs$
 ^pkgdown$
-^CLAUDE\.md$
-^\.claude$
 ^logo_video\.gif$
 ^cran-comments\.md$
 ^CRAN-SUBMISSION$

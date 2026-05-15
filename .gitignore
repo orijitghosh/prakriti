@@ -6,3 +6,9 @@
 *.tar.gz
 docs/
 inst/doc/
+
+# Local-only working files
+PRD.md
+tutorial.R
+setup.R
+logo_video.gif
