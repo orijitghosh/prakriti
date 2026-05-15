@@ -1,3 +1,13 @@
+# prakriti 0.1.2
+
+* Replaced `\dontrun{}` with `\donttest{}` in examples for `display_prakriti()`
+  and `scale_color_prakriti()` / `scale_fill_prakriti()`, per CRAN reviewer
+  feedback.
+
+# prakriti 0.1.1
+
+* Internal cleanups in preparation for CRAN submission.
+
 # prakriti 0.1.0
 
 Initial release.

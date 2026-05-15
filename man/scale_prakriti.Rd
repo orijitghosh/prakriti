@@ -36,7 +36,7 @@ qualitative palettes default to discrete; sequential and diverging palettes
 default to continuous. Override with \code{discrete}.
 }
 \examples{
-\dontrun{
+\donttest{
 library(ggplot2)
 ggplot(mtcars, aes(wt, mpg, color = factor(cyl))) +
   geom_point(size = 3) +

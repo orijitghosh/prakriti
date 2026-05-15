@@ -17,7 +17,7 @@
 #' @return A ggplot2 scale object.
 #'
 #' @examples
-#' \dontrun{
+#' \donttest{
 #' library(ggplot2)
 #' ggplot(mtcars, aes(wt, mpg, color = factor(cyl))) +
 #'   geom_point(size = 3) +

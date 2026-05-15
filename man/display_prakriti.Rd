@@ -24,7 +24,7 @@ Plots pane.
 }
 \examples{
 display_prakriti("rann")
-\dontrun{
+\donttest{
 display_prakriti()
 display_prakriti(show_type = FALSE)
 }
